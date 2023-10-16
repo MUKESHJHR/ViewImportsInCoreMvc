@@ -1,0 +1,45 @@
+﻿@model List<Student>
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>Home Index Page</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Section</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>
+                        @student.StudentId
+                    </td>
+                    <td>
+                        @student.Name
+                    </td>
+                    <td>
+                        @student.Branch
+                    </td>
+                    <td>
+                        @student.Section
+                    </td>
+                    <td>
+                        @student.Gender
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

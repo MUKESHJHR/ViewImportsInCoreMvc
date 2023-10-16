@@ -1,0 +1,25 @@
+﻿@model Student
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>Student Detaills</title>
+</head>
+<body>
+    <div>@Model?.StudentId</div>
+    <div>
+        Name : @Model?.Name
+    </div>
+    <div>
+        Branch : @Model?.Branch
+    </div>
+    <div>
+        Section : @Model?.Section
+    </div>
+    <div>
+        Gender : @Model?.Gender
+    </div>
+</body>
+</html>
